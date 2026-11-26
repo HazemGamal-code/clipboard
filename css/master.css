@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+@media (min-width: 375px) {
+}
+:root {
+  --p-color: hsl(201, 11%, 66%);
+  --line-height: 1.5;
+  --heading-color: hsl(210, 10%, 33%);
+  --margin-top: 100px;
+  --padding: 15px;
+}
+/* global rules */
+header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+header img {
+  margin: 60px 60px 20px;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .container .text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .container .text h1 {
+  margin: 0.67em 0;
+  font-size: 1.8em;
+  max-width: 330px;
+}
+header .container .text p {
+  max-width: 350px;
+}
+@media (min-width: 610px) {
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    width: 1380px;
+  }
+  header {
+    background-image: url(../images/bg-header-desktop.png);
+    background-size: cover;
+  }
+  header .container .text h1 {
+    font-size: 2.5em;
+    max-width: 700px;
+  }
+  header .container .text p {
+    max-width: 610px;
+  }
+  header .container .download {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+}
+.section-one .keep-track {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-one .keep-track h2 {
+  max-width: 250px;
+}
+.section-one .keep-track p {
+  max-width: 335px;
+}
+.section-one .track-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-one .track-content img {
+  width: 300px;
+  margin-bottom: 40px;
+}
+.section-one .track-content .track-text .text p {
+  margin: 20px 0;
+}
+@media (min-width: 1440px) {
+  .section-one .track-content {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+  .section-one .keep-track h2 {
+    max-width: 430px;
+    font-size: 1.8em;
+  }
+  .section-one .keep-track p {
+    max-width: 690px;
+  }
+  .section-one .track-content img {
+    width: 100%;
+    margin-left: -65px;
+  }
+  .section-one .track-content .track-text .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .section-one .track-content .track-text .text p {
+    max-width: 380px;
+    margin-bottom: 70px;
+  }
+  .section-one .track-content {
+    text-align: unset;
+  }
+}
+.section-two .access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-two img {
+  width: 300px;
+  margin-top: 40px;
+}
+@media (min-width: 1440px) {
+  .section-two .access .text p {
+    max-width: 670px;
+  }
+  .section-two img {
+    width: auto;
+  }
+}
+.section-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-three .workflow p {
+  margin-top: 20px;
+}
+.section-three .workflow-content {
+  margin-top: 40px;
+}
+.section-three .workflow-content img {
+  margin-bottom: 40px;
+  height: 32px;
+}
+.section-three .workflow-content .content h3 {
+  margin-bottom: 20px;
+}
+.section-three .workflow-content .content p {
+  margin-bottom: 40px;
+}
+@media (min-width: 1440px) {
+  .section-three .workflow-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 60px;
+  }
+  .section-three .workflow-content .content p {
+    max-width: 405px;
+  }
+}
+.section-four {
+  margin-top: 60px;
+}
+.section-four .logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-four .logo img {
+  margin-bottom: 60px;
+}
+.section-four .clipboard {
+  margin-top: var(--margin-top);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-four .clipboard .clipboard-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-four .clipboard h2 {
+  max-width: 330px;
+}
+@media (min-width: 1440px) {
+  .section-four .logo {
+    flex-direction: row;
+    gap: 110px;
+  }
+  .section-four .clipboard h2 {
+    max-width: 380px;
+    text-align: center;
+  }
+  .section-four .clipboard p {
+    max-width: 685px;
+  }
+  .section-four .clipboard .download {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  background-color: #f5f6f8;
+}
+.footer .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .logo img {
+  margin-top: 40px;
+  width: 80px;
+  height: 80px;
+}
+.footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.footer .footer-content a {
+  text-decoration: none;
+  color: var(--heading-color);
+  cursor: pointer;
+}
+.footer .social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer .logo img {
+    margin-top: 0;
+  }
+}
+
+/* test */
+.download {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+.download button {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 40px;
+  padding: 20px;
+  width: 310px;
+  border-color: transparent;
+  cursor: pointer;
+}
+.download button:first-child {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 4px 0 #009688;
+}
+.download button:last-child {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 4px 0 #3f51b5;
+}
+@media (min-width: 1440px) {
+  .download {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+}
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+footer {
+  padding: var(--padding);
+}
+.section-one,
+.section-two,
+.section-three,
+footer {
+  margin-top: var(--margin-top);
+}
+.section-one p,
+.section-two p,
+.section-three p,
+.section-four p {
+  line-height: var(--line-height);
+  color: var(--p-color);
+}
+.section-one .keep-track p,
+.section-two .access .text p,
+.section-three .workflow p,
+.section-four .clipboard p {
+  margin-top: 20px;
+}
+header h1,
+.section-one h2,
+.section-one h3,
+.section-two h2,
+.section-three h2,
+.section-three h3,
+.section-four h2 {
+  color: var(--heading-color);
+}
